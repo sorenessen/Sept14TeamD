@@ -2,7 +2,7 @@ hey guys this is just the setup for the team git, create a reporsitory in your o
 with the same name and push to this specific repository - Sohan: my number: 347-595-2500, email: sohanmahmud590@gmail.com
 This is my test to see if everything is fine - Reuben - phone 408-910-0994 email - rdeveras89@gmail.com
 This is my test- Soren - phone number 202.230.4567/email: sorenessen@gmail.com
-
+This is my test-Kaya-email-myshauddin123@gmail.com
 
 
 
@@ -18,3 +18,4 @@ Tuesday 8/30/16 -- Work on modules; Screenshare meeting at night(?) to discuss p
 Wednesdat 8/31/16 -- Work on modules; Screenshare meeting at night(?) to discuss progress; Decide whether to submit draft2;
 Thursday 9/1/16 -- Work on modules; Screenshare meetings; Put everything together; put final touches; Submit draft3;
 Friday 9/2/16 -- Put finishing touches on project; Screenshare meeting for final review; submit final draft;
+
