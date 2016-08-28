@@ -1,7 +1,7 @@
 hey guys this is just the setup for the team git, create a reporsitory in your own workspace
 with the same name and push to this specific repository - Sohan: my number: 347-595-2500, email: sohanmahmud590@gmail.com
 This is my test to see if everything is fine - Reuben - phone 408-910-0994 email - rdeveras89@gmail.com
-This is my test- Soren - phone number 202.230.4567/email: sorenessen@gmail.com
+This is my test- Soren - phone number 202.230.4567/email: sorenessen@gmail.com ...
 This is my test-Kaya-email-myshauddin123@gmail.com
 
 SCHEDULE
