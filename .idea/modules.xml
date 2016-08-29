@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/IGN/IGN.iml" filepath="$PROJECT_DIR$/IGN/IGN.iml" />
       <module fileurl="file://$PROJECT_DIR$/TeamDAutomation.iml" filepath="$PROJECT_DIR$/TeamDAutomation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Wikipedia/Wikipedia.iml" filepath="$PROJECT_DIR$/Wikipedia/Wikipedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iFixit/iFixit.iml" filepath="$PROJECT_DIR$/iFixit/iFixit.iml" />
     </modules>
   </component>
 </project>

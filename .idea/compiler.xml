@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="Facebook" />
         <module name="Generic" />
+        <module name="iFixit" />
         <module name="IGN" />
         <module name="Wikipedia" />
       </profile>
@@ -31,6 +32,7 @@
     <bytecodeTargetLevel>
       <module name="Facebook" target="1.5" />
       <module name="Generic" target="1.5" />
+      <module name="iFixit" target="1.5" />
       <module name="IGN" target="1.5" />
       <module name="TeamDAutomation" target="1.5" />
       <module name="Wikipedia" target="1.5" />

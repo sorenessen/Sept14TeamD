@@ -13,6 +13,7 @@
         <module>Facebook</module>
         <module>IGN</module>
         <module>Wikipedia</module>
+        <module>iFixit</module>
     </modules>
 
     <dependencyManagement>
