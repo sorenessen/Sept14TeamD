@@ -22,11 +22,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="TeamDAutomation" />
+        <module name="Facebook" />
+        <module name="Generic" />
+        <module name="IGN" />
+        <module name="Wikipedia" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Facebook" target="1.5" />
+      <module name="Generic" target="1.5" />
+      <module name="IGN" target="1.5" />
       <module name="TeamDAutomation" target="1.5" />
+      <module name="Wikipedia" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

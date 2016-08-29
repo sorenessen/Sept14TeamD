@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="IGN News Network" parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value=""/>
+    <parameter name="accessKey" value=""/>
+    <parameter name="os" value="Win8"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="46.0"/>
+    <parameter name="url" value="http://www.ign.com"/>
+
+    <test name = "IGN functions">
+        <classes>
+            <!--<class name="home.page.Search"/>-->
+            <class name=""/>
+        </classes>
+    </test>
+
+</suite>

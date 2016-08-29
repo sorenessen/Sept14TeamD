@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Facebook/Facebook.iml" filepath="$PROJECT_DIR$/Facebook/Facebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/Generic/Generic.iml" filepath="$PROJECT_DIR$/Generic/Generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IGN/IGN.iml" filepath="$PROJECT_DIR$/IGN/IGN.iml" />
       <module fileurl="file://$PROJECT_DIR$/TeamDAutomation.iml" filepath="$PROJECT_DIR$/TeamDAutomation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wikipedia/Wikipedia.iml" filepath="$PROJECT_DIR$/Wikipedia/Wikipedia.iml" />
     </modules>
   </component>
 </project>
