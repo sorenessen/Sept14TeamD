@@ -14,6 +14,7 @@
         <module>IGN</module>
         <module>Wikipedia</module>
         <module>iFixit</module>
+        <module>Ebay</module>
     </modules>
 
     <dependencyManagement>
