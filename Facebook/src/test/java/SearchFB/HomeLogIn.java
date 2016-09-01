@@ -17,7 +17,7 @@ public class HomeLogIn extends Base {
 
 
     //1.users are able to click on on the email box
-    @Test
+    @Test(priority = 1)
     public void ClickEmailBox() throws InterruptedException {
         sleepFor(30);
         clickByCss("#email");
@@ -26,7 +26,7 @@ public class HomeLogIn extends Base {
       }
 
     // 2.users are able to click and input an email
-     @Test
+     @Test(priority = 2)
     public void clickAndEnterEmailBox() throws InterruptedException {
         sleepFor(20);
     typeByCss("#email", "teamdautomation@gmail.com");
@@ -36,7 +36,7 @@ public class HomeLogIn extends Base {
       }
 
     // 3.user are able to click on the password box
-    @Test
+    @Test(priority = 3)
     public void ClickPassBox() throws InterruptedException {
         sleepFor(20);
       clickByCss("#pass");
@@ -45,7 +45,7 @@ public class HomeLogIn extends Base {
       }
 
 //    4.users are able to click and input password
-    @Test
+    @Test(priority = 4)
     public void ClickAndInputPass() throws InterruptedException {
         sleepFor(10);
         typeByCss("#pass", "teamd123");
@@ -58,7 +58,7 @@ public class HomeLogIn extends Base {
 //
 //
 //    5.Users are able to log in with userName and password
-    @Test
+    @Test(priority = 5)
     public void UserIDAndPass() throws InterruptedException {
 //        typeByCss("#email","");
         typeByCss("#email", "teamdautomation@gmail.com");
@@ -72,7 +72,7 @@ public class HomeLogIn extends Base {
 
 
    // users are able to click on the 'whats on your mind' status box
-      @Test
+      @Test(priority = 6)
     public void ClickOnTheStatusBox() throws InterruptedException {
         sleepFor(20);
         typeByCss("#email", "teamdautomation@gmail.com");
@@ -85,8 +85,7 @@ public class HomeLogIn extends Base {
       }
 
 //    users are able to click and input a value on the 'whats on your mind' status box
-      @Test
-
+      @Test(priority = 7)
     public void ClickAndInputAValue() throws InterruptedException {
         sleepFor(20);
         typeByCss("#email", "teamdautomation@gmail.com");
@@ -100,8 +99,7 @@ public class HomeLogIn extends Base {
 
 
 //    users able to click on the post button
-      @Test
-
+      @Test(priority = 8)
     public void ClickOnThePostButton() throws InterruptedException {
         sleepFor(20);
         typeByCss("#email", "teamdautomation@gmail.com");
@@ -115,8 +113,7 @@ public class HomeLogIn extends Base {
 
 
    // users are able to update a status
-      @Test
-
+      @Test(priority = 9)
     public void StatusUpdate() throws InterruptedException {
         sleepFor(20);
         typeByCss("#email", "teamdautomation@gmail.com");
@@ -134,7 +131,7 @@ public class HomeLogIn extends Base {
 
 
    // users are able to click on the drop down menu for status privacy
-        @Test
+        @Test(priority = 10)
     public void DropDownPrivacyMenu() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -147,7 +144,7 @@ public class HomeLogIn extends Base {
 
 
     //users are able to click on public on the privacy drop down menu
-        @Test
+        @Test(priority = 11)
     public void ClickONPublic() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -162,7 +159,7 @@ public class HomeLogIn extends Base {
 
 
    // users are able to click on only for friends on the drop down menu for privacy of a post
-            @Test
+            @Test(priority = 12)
     public void ClickOnJustForFriends() throws InterruptedException {
     typeByCss("#email", "teamdautomation@gmail.com");
     sleepFor(10);
@@ -180,7 +177,7 @@ public class HomeLogIn extends Base {
 
 
     //user are ble to click on the only for me option on the drop down privacy box
-        @Test
+        @Test(priority = 13)
     public void ClickOnlyForMeStatus() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -196,7 +193,7 @@ public class HomeLogIn extends Base {
 
 
      //     users are able to change the privacy of a status to public
-    @Test
+    @Test(priority = 14)
     public void PublicStatus() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -215,7 +212,7 @@ public class HomeLogIn extends Base {
 }
 
 //    users are able to change the privacy of the status to friends only
-        @Test
+        @Test(priority = 15)
         public void StatusJustForFriends() throws InterruptedException {
     typeByCss("#email", "teamdautomation@gmail.com");
     sleepFor(10);
@@ -235,7 +232,7 @@ public class HomeLogIn extends Base {
 
 
 //    users are able to click and post a status with the privacy setting only for me
-    @Test
+    @Test(priority = 16)
     public void OnlyForMeStatus() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -256,7 +253,7 @@ public class HomeLogIn extends Base {
 
 
        // users are able to click on their profile
-    @Test
+    @Test(priority = 17)
     public void ClickProfile()throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(5);
@@ -267,7 +264,7 @@ public class HomeLogIn extends Base {
     }
 
   //  users are able to click on home button
-
+    @Test(priority = 18)
     public void ClickHome()throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(5);
@@ -280,7 +277,7 @@ public class HomeLogIn extends Base {
 
 
  //   users are able to click on find friends button
-    @Test
+    @Test(priority = 19)
     public void ClickFindFriends()throws InterruptedException{
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(5);
@@ -288,14 +285,14 @@ public class HomeLogIn extends Base {
         sleepFor(10);
         clickByCss("#findFriendsNav");
         sleepFor(10);
-        clickByID("findFriendsNav");
+        clickById("findFriendsNav");
         sleepFor(10);
     }
 
 
 
  //       users are able to click on news feed
-    @Test
+    @Test(priority = 20)
     public void ClickNewsFeed1()throws InterruptedException{
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(5);;
@@ -305,7 +302,7 @@ public class HomeLogIn extends Base {
 
 
  //   users are able to click on news feed
-    @Test
+    @Test(priority = 21)
     public void ClickNewsFeed2()throws InterruptedException{
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(5);
@@ -318,7 +315,7 @@ public class HomeLogIn extends Base {
 
 
   //  users are able to click on the messages on the left hand side
-    @Test
+    @Test(priority = 22)
      public void ClickMessage()throws InterruptedException{
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(5);
@@ -334,7 +331,7 @@ public class HomeLogIn extends Base {
 
 
  //   users are able check their friend requests
-    @Test
+    @Test(priority = 23)
     public void CheckFriendRequest()throws InterruptedException{
         typeByCss("#email","teamdautomation@gmail.com");
         sleepFor(5);
@@ -346,7 +343,7 @@ public class HomeLogIn extends Base {
 
 
   //  users are ablet to click on the message box from the top right hand side
-    @Test
+    @Test(priority = 24)
     public void CheckMessagesFromTheTopRightCorner()throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -360,7 +357,7 @@ public class HomeLogIn extends Base {
 
 
   //  users are able to click on search for friends
-        @Test
+        @Test(priority = 25)
     public void ClickOnSearchForFriendBox() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -372,7 +369,7 @@ public class HomeLogIn extends Base {
 
 
  //   users are able to input a friends name on the search box
-   @Test
+   @Test(priority = 26)
     public void ClickAndEnterAFriendsName() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -384,7 +381,7 @@ public class HomeLogIn extends Base {
 
     //  6.users are able to search for friends on facebook
 
-    @Test
+    @Test(priority = 27)
     public void SearchFriends() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -396,7 +393,7 @@ public class HomeLogIn extends Base {
 
 
   //  7.users are able to send friend requests
-    @Test
+    @Test(priority = 28)
     public void SendFriendRequest() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -409,7 +406,7 @@ public class HomeLogIn extends Base {
 
 
 //    users are able to click on friend's names
-        @Test
+        @Test(priority = 29)
     public void ClickOnFriends() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -424,7 +421,7 @@ public class HomeLogIn extends Base {
 
 
  //   users are able to search and click on friends names
-    @Test
+    @Test(priority = 30)
         public void SearchAndClickOnFriends() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -440,7 +437,7 @@ public class HomeLogIn extends Base {
 
 
  //   users are able to post on friend's wall
-    @Test
+    @Test(priority = 31)
     public void postOnFriendsWall() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -461,7 +458,7 @@ public class HomeLogIn extends Base {
 
 
  //   users are able to like a post in their news feed
-    @Test
+    @Test(priority = 32)
     public void LikeAPostOnNewsFeed() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -472,7 +469,7 @@ public class HomeLogIn extends Base {
 
 
    // users are able to like a post on friends wall
-      @Test
+      @Test(priority = 33)
     public void LikeAPostOnFriendsWall()throws InterruptedException {
           sleepFor(20);
           typeByCss("#email", "teamdautomation@gmail.com");
@@ -491,7 +488,7 @@ public class HomeLogIn extends Base {
    }
 
   //  users are able to comment on a post on the news feed
-    @Test
+    @Test(priority = 34)
     public void CommentOnAPostOnNewsFeed() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -507,7 +504,7 @@ public class HomeLogIn extends Base {
 
 
   //  users are able to comment on a friend's post
-    @Test
+    @Test(priority = 35)
     public void CommentOnAPostOnFriendsWall() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -526,7 +523,7 @@ public class HomeLogIn extends Base {
 }
 
     //users are able to open the chat box on the bottom right hand side
-        @Test
+        @Test(priority = 36)
     public void OpenChatBox() throws InterruptedException {
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(10);
@@ -537,7 +534,7 @@ public class HomeLogIn extends Base {
 }
 
   //  users are able to open chat with a friend
-        @Test
+        @Test(priority = 37)
     public void MessageFriends()throws InterruptedException{
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(5);
@@ -549,7 +546,7 @@ public class HomeLogIn extends Base {
 }
 
     //users are able to send messages(this does not work yet)
-        @Test
+        @Test(priority = 38)
      public void SendMessages()throws InterruptedException{
         typeByCss("#email", "teamdautomation@gmail.com");
         sleepFor(5);

@@ -13,7 +13,6 @@
 
     <test name = "Wikipedia functions">
         <classes>
-            <!--<class name="home.page.Search"/>-->
             <class name="FrontPage.functionality"/>
         </classes>
     </test>
