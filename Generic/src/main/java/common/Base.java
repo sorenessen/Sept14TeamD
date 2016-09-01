@@ -10,6 +10,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.server.handler.interactions.touch.Scroll;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,6 +22,7 @@ import org.testng.annotations.Parameters;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Driver;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -61,10 +63,10 @@ public class Base {
 
    public WebDriver getLocalDriver(String browserName){
       if(browserName.equalsIgnoreCase("chrome")){
-         System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
+         System.setProperty("webdriver.chrome.driver","C:\\WebDrivers\\chromedriver.exe");
          driver = new ChromeDriver();
       }else if(browserName.equalsIgnoreCase("firefox")){
-         System.setProperty("webdriver.gecko.driver","C:\\Webdrivers\\geckodriver.exe");
+         System.setProperty("webdriver.gecko.driver","C:\\WebDrivers\\geckodriver.exe");
          driver = new FirefoxDriver();
       } else if(browserName.equalsIgnoreCase("ie")) {
          System.setProperty("webdriver.ie.driver", "Generic/browser-driver/IEDriverServer.exe");
@@ -85,24 +87,38 @@ public class Base {
       return driver;
    }
    }
-   @AfterMethod
+  @AfterMethod
    public void cleanUp(){
       driver.quit();
    }
 
-   public void clickByCss(String locator) {
+//Click By Locator type
+    public void clickByCss(String locator) {
       driver.findElement(By.cssSelector(locator)).click();
    }
-
-   public void clickByXpath(String locator) {
+    public void clickById(String locator) {driver.findElement(By.id(locator)).click();}
+    public void clickByXpath(String locator) {
       driver.findElement(By.xpath(locator)).click();
    }
+    public void clickByLink(String locator) {
+        driver.findElement(By.linkText(locator)).click();
+    }
+    public void clickByClass(String locator) {
+        driver.findElement(By.className(locator)).click();
+    }
+    public void clickByName(String locator) {
+        driver.findElement(By.name(locator)).click();
+    }
+    public void clickByTagName(String locator) {
+        driver.findElement(By.tagName(locator)).click();
+    }
 
-   public void typeByCss(String locator, String value) {
+
+//Type By Locator
+public void typeByCss(String locator, String value) {
       driver.findElement(By.cssSelector(locator)).sendKeys(value);
    }
-   public void typeByCssNEnter(String locator, String value) {
-      driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
+   public void typeByCssNEnter(String locator, String value) {driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
    }
 
    public void typeByXpath(String locator, String value) {
@@ -116,24 +132,21 @@ public class Base {
    public void clearInputField(String locator){
       driver.findElement(By.cssSelector(locator)).clear();
    }
+
    public List<WebElement> getListOfWebElementsById(String locator) {
-      List<WebElement> list = new ArrayList<WebElement>();
-      list = driver.findElements(By.id(locator));
+      List<WebElement> list = driver.findElements(By.id(locator));
       return list;
    }
    public List<String> getTextFromWebElements(String locator){
-      List<WebElement> element = new ArrayList<WebElement>();
+      List<WebElement> element = driver.findElements(By.cssSelector(locator));
       List<String> text = new ArrayList<String>();
-      element = driver.findElements(By.cssSelector(locator));
       for(WebElement web:element){
          text.add(web.getText());
       }
-
       return text;
    }
    public List<WebElement> getListOfWebElementsByCss(String locator) {
-      List<WebElement> list = new ArrayList<WebElement>();
-      list = driver.findElements(By.cssSelector(locator));
+      List<WebElement> list = driver.findElements(By.cssSelector(locator));
       return list;
    }
    public String  getCurrentPageUrl(){
@@ -169,9 +182,13 @@ public class Base {
       }
       return items;
    }
-   public void selectOptionByVisibleText(WebElement element, String value) {
-      Select select = new Select(element);
+   public void selectOptionByVisibleText(String locator, String value) {
+      Select select = new Select(driver.findElement(By.id(locator)));
       select.selectByVisibleText(value);
+   }
+   public void selectByValue(String locator, String value) {
+      Select select = new Select(driver.findElement(By.id(locator)));
+      select.selectByValue(value);
    }
    public void sleepFor(int sec)throws InterruptedException{
       Thread.sleep(sec * 1000);
@@ -180,7 +197,7 @@ public class Base {
       try {
          WebElement element = driver.findElement(By.cssSelector(locator));
          Actions action = new Actions(driver);
-         Actions hover = action.moveToElement(element);
+         action.moveToElement(element).perform();
       }catch(Exception ex){
          System.out.println("First attempt has been done, This is second try");
          WebElement element = driver.findElement(By.cssSelector(locator));
@@ -194,7 +211,7 @@ public class Base {
       try {
          WebElement element = driver.findElement(By.xpath(locator));
          Actions action = new Actions(driver);
-         Actions hover = action.moveToElement(element);
+         action.moveToElement(element).perform();
       }catch(Exception ex){
          System.out.println("First attempt has been done, This is second try");
          WebElement element = driver.findElement(By.cssSelector(locator));
@@ -204,6 +221,19 @@ public class Base {
       }
 
    }
+    public void mouseHoverById(String locator) {
+        try {
+            WebElement element = driver.findElement(By.id(locator));
+            Actions action = new Actions(driver);
+            action.moveToElement(element).perform();
+        }catch(Exception ex){
+            System.out.println("First attempt has been done, This is second try");
+            WebElement element = driver.findElement(By.id(locator));
+            Actions action = new Actions(driver);
+            action.moveToElement(element).perform();
+
+        }
+    }
    //handling Alert
    public void okAlert(){
       Alert alert = driver.switchTo().alert();
@@ -258,8 +288,49 @@ public class Base {
    public void keysInput(String locator){
       driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
    }
-   public void typebyCss2(String Locator,String value){
-      driver.findElement(By.cssSelector(Locator)).sendKeys(value);}
 
 
+
+   //SCROLLING
+
+   public void scrollPageDown400(){
+      ((JavascriptExecutor)driver).executeScript("scroll(0, 400)");
+   }
+
+   public void scrollToElementById(String locator){
+     WebElement element = driver.findElement(By.id(locator));
+     JavascriptExecutor je = (JavascriptExecutor)driver;
+     je.executeScript("arguments[0].scrollIntoView(true)",element);
 }
+
+public void byLinks (String locator) {
+    driver.findElement(By.linkText(locator)).click();
+}
+
+public void clicknhold (String locator) {
+    Actions action = new Actions(driver);
+    WebElement element = driver.findElement(By.cssSelector(locator));
+    action.clickAndHold(element).perform();
+}
+public void clickLinksThatAllHaveSimilarCss (String locator) throws InterruptedException {
+    String[] links;
+    int linksCount;
+    List<String> ListUrl = new ArrayList<String>();
+    List<WebElement> linkSize = driver.findElements(By.cssSelector(locator));
+    linksCount = linkSize.size();
+    links= new String[linksCount];
+    for(int i=0;i<linksCount;i++)
+    {
+        links[i] = linkSize.get(i).getAttribute("href");
+        ListUrl.add(links[i]);
+    }
+    for(int i=0;i<linksCount;i++)
+    {
+        driver.navigate().to(links[i]);
+        sleepFor(1);
+        driver.navigate().back();
+    }
+    System.out.println("Total no. of links available: "+linksCount);
+    System.out.println("Links navigated to: " +ListUrl);
+}
+  }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Wikipedia Encyclopedia" parallel="tests">
+<suite name="Ifixit Website" parallel="tests">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="userName" value=""/>
@@ -9,11 +9,12 @@
     <parameter name="os" value="Win8"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="48"/>
-    <parameter name="url" value="https://www.wikipedia.org//"/>
+    <parameter name="url" value="https://www.ifixit.com//"/>
 
-    <test name = "Wikipedia functions">
+    <test name = "Ifixit functions">
         <classes>
-            <class name="FrontPage.functionality"/>
+            <!--<class name="home.page.Search"/>-->
+            <class name="maintenance.Repair"/>
         </classes>
     </test>
 
