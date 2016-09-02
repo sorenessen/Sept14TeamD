@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Ebay" parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value="Abdul026"/>
+    <parameter name="accessKey" value="6eaad28c-ec3d-4a1c-a62d-2e2ac5854f0f"/>
+    <parameter name="os" value="Win8"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="52.0.2743.116"/>
+    <parameter name="url" value="http://www.Ebay.com"/>
+
+    <test name = "Ebay Search">
+        <classes>
+            <class name="Ebaypack.EbayTest"/>
+        </classes>
+    </test>
+
+</suite>
