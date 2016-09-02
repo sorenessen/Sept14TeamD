@@ -11,5 +11,11 @@
 
     <artifactId>com.Ebay</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>TeamDautomation</groupId>
+            <artifactId>Generic</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

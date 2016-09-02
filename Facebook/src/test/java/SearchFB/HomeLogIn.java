@@ -17,7 +17,7 @@ public class HomeLogIn extends Base {
 
 
     //1.users are able to click on on the email box
-    @Test(priority = 1)
+/*    @Test(priority = 1)
     public void ClickEmailBox() throws InterruptedException {
         sleepFor(30);
         clickByCss("#email");
@@ -556,8 +556,35 @@ public class HomeLogIn extends Base {
     sleepFor(10);
     typeByXpath("//*[@id='js_21']","hey");
 
-    }
+    }*/
+@Test
+    public void SelectEveryOptionInMonthDD () throws InterruptedException {
+         for (int i = 0; i<13; i++){
+        selectByIndex("month" ,i);}
+   /* sleepFor(1);
+    selectByValue("month" ,"2");
+    sleepFor(1);
+    selectByValue("month" ,"3");
+    sleepFor(1);
+    selectByValue("month" ,"4");
+    sleepFor(1);
+    selectByValue("month" ,"5");
+    sleepFor(1);
+    selectByValue("month" ,"6");
+    sleepFor(1);
+    selectByValue("month" ,"7");
+    sleepFor(1);
+    selectByValue("month" ,"8");
+    sleepFor(1);
+    selectByValue("month" ,"9");
+    sleepFor(1);
+    selectByValue("month" ,"10");
+    sleepFor(1);
+    selectByValue("month" ,"11");
+    sleepFor(1);
+    selectByValue("month" ,"12");*/
 
+}
 
 }
 

@@ -132,7 +132,7 @@ public class Repair extends Base {
     @Test(priority = 1)//User can post a question on the forum
     public void TestForumPost() throws InterruptedException {
         byLinks("Log In");
-        typeByCss("#email", "teampnt20161@gmail.com");
+        typeByCss("#email", "teampnt2016@gmail.com");
         sleepFor(1);
         typeByCssNEnter("#password", "automation");
         sleepFor(3);
@@ -159,7 +159,7 @@ public class Repair extends Base {
     @Test(priority = 2)//User can edit their question
     public void TestForumEdit() throws InterruptedException {
         byLinks("Log In");
-        typeByCss("#email", "teampnt20161@gmail.com");
+        typeByCss("#email", "teampnt2016@gmail.com");
         sleepFor(1);
         typeByCssNEnter("#password", "automation");
         sleepFor(3);
@@ -187,7 +187,7 @@ public class Repair extends Base {
     @Test(priority = 3)//User can answer their question
     public void TestPostForum() throws InterruptedException {
         byLinks("Log In");
-        typeByCss("#email", "teampnt20161@gmail.com");
+        typeByCss("#email", "teampnt2016@gmail.com");
         sleepFor(1);
         typeByCssNEnter("#password", "automation");
         sleepFor(3);
@@ -216,7 +216,7 @@ public class Repair extends Base {
     @Test(priority = 4)//User can edit their question
     public void TestDeletePost() throws InterruptedException {
         byLinks("Log In");
-        typeByCss("#email", "teampnt20161@gmail.com");
+        typeByCss("#email", "teampnt2016@gmail.com");
         sleepFor(1);
         typeByCssNEnter("#password", "automation");
         sleepFor(3);

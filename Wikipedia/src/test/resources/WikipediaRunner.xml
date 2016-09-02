@@ -4,8 +4,8 @@
 <suite name="Wikipedia Encyclopedia" parallel="tests">
 
     <parameter name="useCloudEnv" value="false"/>
-    <parameter name="userName" value=""/>
-    <parameter name="accessKey" value=""/>
+    <parameter name="userName" value="sohanmahmud590"/>
+    <parameter name="accessKey" value="5bbf5b97-9938-4ec2-b3d5-40e341f438c0"/>
     <parameter name="os" value="Win8"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="48"/>
