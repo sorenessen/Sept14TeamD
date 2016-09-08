@@ -3,7 +3,7 @@
 
 <suite name="iFixit eCommerce" parallel="tests">
 
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="userName" value="sorenessen"/>
     <parameter name="accessKey" value="ae70f005-f825-4b2b-9adb-f8d860fbf1eb"/>
     <parameter name="os" value="Win10"/>
