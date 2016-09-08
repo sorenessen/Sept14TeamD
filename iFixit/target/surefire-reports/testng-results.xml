@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="iFixit eCommerce" duration-ms="39134" started-at="2016-09-08T18:24:36Z" finished-at="2016-09-08T18:25:16Z">
+  <suite name="iFixit eCommerce" duration-ms="41207" started-at="2016-09-08T19:03:25Z" finished-at="2016-09-08T19:04:06Z">
     <groups>
     </groups>
-    <test name="iFixit Functionality" duration-ms="39134" started-at="2016-09-08T18:24:36Z" finished-at="2016-09-08T18:25:16Z">
+    <test name="iFixit Functionality" duration-ms="41207" started-at="2016-09-08T19:03:25Z" finished-at="2016-09-08T19:04:06Z">
       <class name="maintenance.Excel">
-        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:maintenance.Excel@26f67b76]" name="setUp" is-config="true" duration-ms="7406" started-at="2016-09-08T14:24:36Z" finished-at="2016-09-08T14:24:44Z">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:maintenance.Excel@13c78c0b]" name="setUp" is-config="true" duration-ms="9793" started-at="2016-09-08T15:03:25Z" finished-at="2016-09-08T15:03:34Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchUsingExcelFile()[pri:0, instance:maintenance.Excel@26f67b76]" name="searchUsingExcelFile" duration-ms="29933" started-at="2016-09-08T14:24:44Z" finished-at="2016-09-08T14:25:14Z">
+        <test-method status="PASS" signature="searchUsingExcelFile()[pri:0, instance:maintenance.Excel@13c78c0b]" name="searchUsingExcelFile" duration-ms="29899" started-at="2016-09-08T15:03:34Z" finished-at="2016-09-08T15:04:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchUsingExcelFile -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:maintenance.Excel@26f67b76]" name="cleanUp" is-config="true" duration-ms="1780" started-at="2016-09-08T14:25:14Z" finished-at="2016-09-08T14:25:16Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:maintenance.Excel@13c78c0b]" name="cleanUp" is-config="true" duration-ms="1498" started-at="2016-09-08T15:04:04Z" finished-at="2016-09-08T15:04:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
