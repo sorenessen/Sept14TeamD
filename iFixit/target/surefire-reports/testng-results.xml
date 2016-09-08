@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="iFixit eCommerce" duration-ms="39134" started-at="2016-09-08T18:24:36Z" finished-at="2016-09-08T18:25:16Z">
+    <groups>
+    </groups>
+    <test name="iFixit Functionality" duration-ms="39134" started-at="2016-09-08T18:24:36Z" finished-at="2016-09-08T18:25:16Z">
+      <class name="maintenance.Excel">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:maintenance.Excel@26f67b76]" name="setUp" is-config="true" duration-ms="7406" started-at="2016-09-08T14:24:36Z" finished-at="2016-09-08T14:24:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sorenessen]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ae70f005-f825-4b2b-9adb-f8d860fbf1eb]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Win10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[48.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[http://www.ifixit.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchUsingExcelFile()[pri:0, instance:maintenance.Excel@26f67b76]" name="searchUsingExcelFile" duration-ms="29933" started-at="2016-09-08T14:24:44Z" finished-at="2016-09-08T14:25:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchUsingExcelFile -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:maintenance.Excel@26f67b76]" name="cleanUp" is-config="true" duration-ms="1780" started-at="2016-09-08T14:25:14Z" finished-at="2016-09-08T14:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- maintenance.Excel -->
+    </test> <!-- iFixit Functionality -->
+  </suite> <!-- iFixit eCommerce -->
+</testng-results>
