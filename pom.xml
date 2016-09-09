@@ -14,7 +14,7 @@
         <module>IGN</module>
         <module>Wikipedia</module>
         <module>iFixit</module>
-        <module>Ebay</module>
+
     </modules>
 
     <dependencyManagement>
@@ -79,32 +79,42 @@
                 <module>iFixit</module>
             </modules>
         </profile>
-        <!--<profile>-->
-            <!--<id>cnn-app</id>-->
-            <!--<modules>-->
-                <!--<module>Generic</module>-->
-                <!--<module>Cnn</module>-->
-            <!--</modules>-->
-        <!--</profile>-->
-        <!--<profile>-->
-            <!--<id>NyTimes-app</id>-->
-            <!--<modules>-->
-                <!--<module>Generic</module>-->
-                <!--<module>NYTimes</module>-->
-            <!--</modules>-->
-        <!--</profile>-->
-        <!--<profile>-->
-            <!--<id>default</id>-->
-            <!--<activation>-->
-                <!--<jdk>1.8</jdk>-->
-            <!--</activation>-->
-            <!--<modules>-->
-                <!--<module>Generic</module>-->
-                <!--<module>Amazon</module>-->
-                <!--<module>Cnn</module>-->
-                <!--<module>NYTimes</module>-->
-            <!--</modules>-->
-        <!--</profile>-->
+        <profile>
+            <id>Facebook-app</id>
+            <modules>
+                <module>Generic</module>
+                <module>Facebook</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>IGN-app</id>
+            <modules>
+                <module>Generic</module>
+                <module>IGN</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>Wikipedia-app</id>
+            <modules>
+                <module>Generic</module>
+                <module>Wikipedia</module>
+            </modules>
+        </profile>
+
+        <!--running by default runs all the tests-->
+        <profile>
+            <id>default</id>
+            <activation>
+                <jdk>1.8</jdk>
+            </activation>
+            <modules>
+                <module>Generic</module>
+                <module>iFixit</module>
+                <module>Facebook</module>
+                <module>IGN</module>
+                <module>Wikipedia</module>
+            </modules>
+        </profile>
     </profiles>
 
 </project>
