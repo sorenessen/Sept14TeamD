@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="Ebay" />
         <module name="Facebook" />
         <module name="Generic" />
         <module name="iFixit" />
@@ -33,10 +34,10 @@
       <module name="Ebay" target="1.5" />
       <module name="Facebook" target="1.5" />
       <module name="Generic" target="1.5" />
-      <module name="iFixit" target="1.8" />
+      <module name="iFixit" target="1.5" />
       <module name="IGN" target="1.5" />
       <module name="TeamDAutomation" target="1.5" />
-      <module name="Wikipedia" target="1.5" />
+      <module name="Wikipedia" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

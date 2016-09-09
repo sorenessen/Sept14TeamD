@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Wikipedia Encyclopedia]" parallel="tests">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="os" value="Win8"/>
+  <parameter name="accessKey" value="5bbf5b97-9938-4ec2-b3d5-40e341f438c0"/>
+  <parameter name="browserVersion" value="48"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="userName" value="sohanmahmud590"/>
+  <parameter name="url" value="https://www.wikipedia.org//"/>
+  <test name="Wikipedia functions">
+    <classes>
+      <class name="FrontPage.WikiSearchItems"/>
+    </classes>
+  </test> <!-- Wikipedia functions -->
+</suite> <!-- Failed suite [Wikipedia Encyclopedia] -->

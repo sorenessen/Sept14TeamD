@@ -13,7 +13,9 @@
 
     <test name = "Wikipedia functions">
         <classes>
-            <class name="FrontPage.functionality"/>
+           <!-- <class name="FrontPage.functionality"/>-->
+            <class name="FrontPage.WikiSearchItems"/>
+
         </classes>
     </test>
 

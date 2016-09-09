@@ -14,7 +14,7 @@
         <module>IGN</module>
         <module>Wikipedia</module>
         <module>iFixit</module>
-
+        <module>Ebay</module>
     </modules>
 
     <dependencyManagement>
@@ -51,11 +51,11 @@
                 <artifactId>poi-ooxml-schemas</artifactId>
                 <version>3.15-beta2</version>
             </dependency>
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi</artifactId>
-                <version>3.13</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.apache.poi</groupId>-->
+                <!--<artifactId>poi</artifactId>-->
+                <!--<version>3.13</version>-->
+            <!--</dependency>-->
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
@@ -66,55 +66,76 @@
                 <artifactId>log4j-core</artifactId>
                 <version>2.6.2</version>
             </dependency>
-            </dependencies>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>3.13</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 
-    <!--Profiling-->
+
 
     <profiles>
+
         <profile>
-            <id>ifixit-app</id>
-            <modules>
-                <module>Generic</module>
-                <module>iFixit</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>Facebook-app</id>
-            <modules>
-                <module>Generic</module>
-                <module>Facebook</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>IGN-app</id>
-            <modules>
-                <module>Generic</module>
-                <module>IGN</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>Wikipedia-app</id>
+            <id>wikipedia</id>
             <modules>
                 <module>Generic</module>
                 <module>Wikipedia</module>
             </modules>
         </profile>
 
-        <!--running by default runs all the tests-->
         <profile>
+            <id>ifixit</id>
+            <modules>
+                <module>Generic</module>
+                <module>iFixit</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>facebook</id>
+            <modules>
+                <module>Generic</module>
+                <module>Facebook</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>IGN</id>
+            <modules>
+                <module>Generic</module>
+                <module>IGN</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>ebay</id>
+            <modules>
+                <module>Generic</module>
+                <module>Ebay</module>
+            </modules>
+        </profile>
+
+
+        <profile>
+
             <id>default</id>
             <activation>
                 <jdk>1.8</jdk>
             </activation>
             <modules>
                 <module>Generic</module>
-                <module>iFixit</module>
-                <module>Facebook</module>
-                <module>IGN</module>
                 <module>Wikipedia</module>
+                <module>Facebook</module>
+                <module>iFixit</module>
+                <module>IGN</module>
+                <module>Ebay</module>
             </modules>
+
         </profile>
+
     </profiles>
 
 </project>

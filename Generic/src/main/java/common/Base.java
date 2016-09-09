@@ -93,7 +93,7 @@ public class Base {
 
     @AfterMethod
     public void cleanUp() {
-        driver.quit();
+        driver.close();
     }
 
     //Click By Locator type
@@ -239,6 +239,20 @@ public class Base {
         }
 
     }
+    public void mouseHoverBylink(String locator) {
+        try {
+            WebElement element = driver.findElement(By.linkText(locator));
+            Actions action = new Actions(driver);
+            action.moveToElement(element).perform();
+        } catch (Exception ex) {
+            System.out.println("First attempt has been done, This is second try");
+            WebElement element = driver.findElement(By.linkText(locator));
+            Actions action = new Actions(driver);
+            action.moveToElement(element).perform();
+
+        }
+
+    }
 
     public void mouseHoverByXpath(String locator) {
         try {
@@ -304,6 +318,7 @@ public class Base {
     public void waitUntilClickAble(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+
     }
 
     public void waitUntilVisible(By locator) {
@@ -337,12 +352,32 @@ public class Base {
     public void scrollPageDown400() {
         ((JavascriptExecutor) driver).executeScript("scroll(0, 400)");
     }
+    public void scrollPageup400() {
+        ((JavascriptExecutor) driver).executeScript("scroll(0, -400)");
+    }
+    public void scrollPageDown200() {
+        ((JavascriptExecutor) driver).executeScript("scroll(0, 200)");
+    }
+
 
     public void scrollToElementById(String locator) {
+
         WebElement element = driver.findElement(By.id(locator));
         JavascriptExecutor je = (JavascriptExecutor) driver;
         je.executeScript("arguments[0].scrollIntoView(true)", element);
     }
+
+    public void scrollToElementByxpath(String locator) {
+
+        WebElement element = driver.findElement(By.xpath(locator));
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        je.executeScript("arguments[0].scrollIntoView(true)", element);
+    }
+
+
+
+
+
     public void scrollToElementByCss(String locator) {
         WebElement element = driver.findElement(By.cssSelector(locator));
         JavascriptExecutor je = (JavascriptExecutor) driver;
