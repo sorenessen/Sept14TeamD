@@ -79,7 +79,7 @@
     <profiles>
 
         <profile>
-            <id>wikipedia-app</id>
+            <id>wikipedia</id>
             <modules>
                 <module>Generic</module>
                 <module>Wikipedia</module>
@@ -87,7 +87,7 @@
         </profile>
 
         <profile>
-            <id>ifixit-app</id>
+            <id>ifixit</id>
             <modules>
                 <module>Generic</module>
                 <module>iFixit</module>
@@ -95,7 +95,7 @@
         </profile>
 
         <profile>
-            <id>facebook-app</id>
+            <id>facebook</id>
             <modules>
                 <module>Generic</module>
                 <module>Facebook</module>
@@ -103,20 +103,20 @@
         </profile>
 
         <profile>
-            <id>IGN-app</id>
+            <id>IGN</id>
             <modules>
                 <module>Generic</module>
                 <module>IGN</module>
             </modules>
         </profile>
 
-        <!--<profile>-->
-            <!--<id>ebay</id>-->
-            <!--<modules>-->
-                <!--<module>Generic</module>-->
-                <!--<module>Ebay</module>-->
-            <!--</modules>-->
-        <!--</profile>-->
+        <profile>
+            <id>ebay</id>
+            <modules>
+                <module>Generic</module>
+                <module>Ebay</module>
+            </modules>
+        </profile>
 
 
         <!--<profile>-->
