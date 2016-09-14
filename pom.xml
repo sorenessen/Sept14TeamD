@@ -87,7 +87,7 @@
         </profile>
 
         <profile>
-            <id>ifixit</id>
+            <id>ifixit-app</id>
             <modules>
                 <module>Generic</module>
                 <module>iFixit</module>
