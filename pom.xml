@@ -110,31 +110,31 @@
             </modules>
         </profile>
 
-        <profile>
-            <id>ebay</id>
-            <modules>
-                <module>Generic</module>
-                <module>Ebay</module>
-            </modules>
-        </profile>
+        <!--<profile>-->
+            <!--<id>ebay</id>-->
+            <!--<modules>-->
+                <!--<module>Generic</module>-->
+                <!--<module>Ebay</module>-->
+            <!--</modules>-->
+        <!--</profile>-->
 
 
-        <profile>
+        <!--<profile>-->
 
-            <id>default</id>
-            <activation>
-                <jdk>1.8</jdk>
-            </activation>
-            <modules>
-                <module>Generic</module>
-                <module>Wikipedia</module>
-                <module>Facebook</module>
-                <module>iFixit</module>
-                <module>IGN</module>
-                <module>Ebay</module>
-            </modules>
+            <!--<id>default</id>-->
+            <!--<activation>-->
+                <!--<jdk>1.8</jdk>-->
+            <!--</activation>-->
+            <!--<modules>-->
+                <!--<module>Generic</module>-->
+                <!--<module>Wikipedia</module>-->
+                <!--<module>Facebook</module>-->
+                <!--<module>iFixit</module>-->
+                <!--<module>IGN</module>-->
+                <!--<module>Ebay</module>-->
+            <!--</modules>-->
 
-        </profile>
+        <!--</profile>-->
 
     </profiles>
 
