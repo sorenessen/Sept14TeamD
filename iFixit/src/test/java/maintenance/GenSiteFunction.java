@@ -1,25 +1,14 @@
 package maintenance;
 
 import common.Base;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.Keyboard;
-import org.openqa.selenium.remote.server.Session;
-import org.openqa.selenium.remote.server.handler.FindElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import sun.security.util.ByteArrayTagOrder;
-
-import java.util.Iterator;
-import java.util.Set;
 
 /**
  * Created by soren on 8/29/2016.
  */
-public class Repair extends Base {
+public class GenSiteFunction extends Base {
+
+
 
     @Test
     //Test1---login: teampnt2016@gmail.com ---- password: automation
@@ -28,9 +17,9 @@ public class Repair extends Base {
 
         clickByXpath(".//*[@id='home-page-top']/div/div[1]/a[2]");
         byLinks("Log In");
-        typeByCss("#email", "demobooby@gmail.com");
+        typeByCss("#email", "shartbutts@gmail.com");
         sleepFor(1);
-        typeByCssNEnter("#password", "password");
+        typeByCssNEnter("#password", "automation");
         sleepFor(3);
 ////            clickByCss("#loginBtn");
 ////            sleepFor(3);
@@ -134,114 +123,7 @@ public class Repair extends Base {
         sleepFor(2);
     }
 
-    @Test(priority = 1)//User can post a question on the forum
-    public void TestForumPost() throws InterruptedException {
-        byLinks("Log In");
-        typeByCss("#email", "demobooby@gmail.com");
-        sleepFor(1);
-        typeByCssNEnter("#password", "automation");
-        sleepFor(3);
-        clickByCss("#ifixit-logo");
-        sleepFor(3);
-        clickByXpath(".//*[@id='home-page-top']/nav/a[2]");
-        sleepFor(3);
-        byLinks("Ask a Question");
-        sleepFor(3);
-        typeByCss("#qaDevice", "Lenovo Edge2 1580");
-        typeByCss("#qaTitle", "Battery replacement procedure for current lenovo modelsaa");
-        sleepFor(3);
-        clickByCss(".fa.fa-header");
-        typeByCss("#qaText", "HELP MYs COMPUTERs BATTERY IS DYING");
-        typeByCss("#qaTags", "Lenovo, battery, replacement, power issues");
-        sleepFor(3);
-        clickByCss("#previewQuestion");
-        sleepFor(2);
-        clickByCss("#submitQuestion");
-        sleepFor(4);
-    }
 
-
-    @Test(priority = 2)//User can edit their question
-    public void TestForumEdit() throws InterruptedException {
-        byLinks("Log In");
-        typeByCss("#email", "demobooby@gmail.com");
-        sleepFor(1);
-        typeByCssNEnter("#password", "automation");
-        sleepFor(3);
-        clickByCss("#ifixit-logo");
-        sleepFor(3);
-        clickByXpath(".//*[@id='home-page-top']/nav/a[2]");
-        sleepFor(3);
-        //clickByCss("#subscribedTab");
-        typeByCss("#answersSearch", "Battery replacement procedure for current lenovo modelsaa");
-        clickByCss("#searchIcon");
-        sleepFor(3);
-        byLinks("Battery replacement procedure for current lenovo modelsaa");
-        clickByCss(".post-metadata-actions>span");
-        clickByCss(" .post-action.post-action-edit>a");
-        sleepFor(1);
-        typeByCss("#qaText", "this is an appendage");
-        sleepFor(3);
-        clickByCss("#previewQuestion");
-        sleepFor(2);
-        clickByCss("#submitQuestion");
-        sleepFor(5);
-
-    }
-
-    @Test(priority = 3)//User can answer their question
-    public void TestPostForum() throws InterruptedException {
-        byLinks("Log In");
-        typeByCss("#email", "demobooby@gmail.com");
-        sleepFor(1);
-        typeByCssNEnter("#password", "automation");
-        sleepFor(3);
-        clickByCss("#ifixit-logo");
-        sleepFor(3);
-        clickByXpath(".//*[@id='home-page-top']/nav/a[2]");
-        sleepFor(3);
-        typeByCss("#answersSearch", "Battery replacement procedure for current lenovo modelsaa");
-        clickByCss("#searchIcon");
-        sleepFor(3);
-        byLinks("Battery replacement procedure for current lenovo modelsaa");
-        clickByCss(".button.button-action-solid.js-answer-question");
-        sleepFor(1);
-        typeByCss("#answerText", "Open it up, ya dummy!");
-        sleepFor(3);
-        clickByCss(".button.js-preview-answer");
-        sleepFor(2);
-        clickByCss("#postAnswer");
-        sleepFor(3);
-        clickByCss("#buttonAnsweranyway");
-        sleepFor(3);
-        //clickByCss(".button.button-action.button-accept-answer");
-        //sleepFor(3);
-    }
-
-    @Test(priority = 4)//User delete their question
-    public void TestDeletePost() throws InterruptedException {
-        byLinks("Log In");
-        typeByCss("#email", "demobooby@gmail.com");
-        sleepFor(1);
-        typeByCssNEnter("#password", "automation");
-        sleepFor(3);
-        clickByCss("#ifixit-logo");
-        sleepFor(3);
-        clickByXpath(".//*[@id='home-page-top']/nav/a[2]");
-        sleepFor(3);
-        //clickByCss("#subscribedTab");
-        typeByCss("#answersSearch", "Battery replacement procedure for current lenovo modelsaa");
-        clickByCss("#searchIcon");
-        sleepFor(2);
-        byLinks("Battery replacement procedure for current lenovo modelsaa");
-        clickByCss(".post-metadata-actions>span");
-        clickByCss(" .post-action.post-action-delete.js-action-delete");
-        sleepFor(3);
-        clickByCss("#deleteDoctype-334737");
-        sleepFor(3);
-
-
-    }
 
     @Test
     public void LanguageOptions() throws InterruptedException {

@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * Created by soren on 9/7/2016.
  */
-public class Excel extends Base {
+public class DatabaseItemSearch extends Base {
     @Test
     public void searchUsingExcelFile()throws IOException,InterruptedException {
         //initialize Search page factory

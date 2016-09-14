@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Wikipedia Encyclopedia" duration-ms="51190" started-at="2016-09-07T08:27:33Z" finished-at="2016-09-07T08:28:24Z">
+  <suite name="Wikipedia Encyclopedia" duration-ms="43021" started-at="2016-09-14T19:04:48Z" finished-at="2016-09-14T19:05:31Z">
     <groups>
     </groups>
-    <test name="Wikipedia functions" duration-ms="51190" started-at="2016-09-07T08:27:33Z" finished-at="2016-09-07T08:28:24Z">
+    <test name="Wikipedia functions" duration-ms="43021" started-at="2016-09-14T19:04:48Z" finished-at="2016-09-14T19:05:31Z">
       <class name="FrontPage.WikiSearchItems">
-        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrontPage.WikiSearchItems@26f67b76]" name="setUp" is-config="true" duration-ms="8194" started-at="2016-09-07T04:27:33Z" finished-at="2016-09-07T04:27:41Z">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrontPage.WikiSearchItems@13c78c0b]" name="setUp" is-config="true" duration-ms="6739" started-at="2016-09-14T15:04:48Z" finished-at="2016-09-14T15:04:55Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchUsingExcelFile()[pri:0, instance:FrontPage.WikiSearchItems@26f67b76]" name="searchUsingExcelFile" duration-ms="42892" started-at="2016-09-07T04:27:41Z" finished-at="2016-09-07T04:28:24Z">
+        <test-method status="PASS" signature="searchUsingExcelFile()[pri:0, instance:FrontPage.WikiSearchItems@13c78c0b]" name="searchUsingExcelFile" duration-ms="35160" started-at="2016-09-14T15:04:55Z" finished-at="2016-09-14T15:05:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchUsingExcelFile -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:FrontPage.WikiSearchItems@26f67b76]" name="cleanUp" is-config="true" duration-ms="87" started-at="2016-09-07T04:28:24Z" finished-at="2016-09-07T04:28:24Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:FrontPage.WikiSearchItems@13c78c0b]" name="cleanUp" is-config="true" duration-ms="1109" started-at="2016-09-14T15:05:30Z" finished-at="2016-09-14T15:05:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
